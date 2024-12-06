@@ -22,12 +22,15 @@ SCOPES = [
 # Khởi tạo kết nối với Google API
 
 try:
-    creds = Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
+    creds = Credentials.from_service_account_info(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
     print("Thông tin đăng nhập hợp lệ.")
+    
     # Kết nối Google Sheets API
     sheets_service = build('sheets', 'v4', credentials=creds)
+    
     # Kết nối Google Drive API
     drive_service = build('drive', 'v3', credentials=creds)
+    
 except Exception as e:
     print("Lỗi trong tệp thông tin đăng nhập:", e)
 
