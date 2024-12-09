@@ -263,15 +263,15 @@ def chamcong():
     return render_template('chamcong/chamcong.html')
 
 @app.route('/khachhang')
-def chamcong():
+def khachhang():
     return render_template('khachhang/khachhang.html')
 
 @app.route('/tonkhobanhang')
-def chamcong():
+def tonkhobanhang():
     return render_template('banhang/tonkhobanhang.html')
 
 @app.route('/tonkhosx')
-def chamcong():
+def tonkhosx():
     return render_template('sanxuat/tonkhosx.html')
 
 
