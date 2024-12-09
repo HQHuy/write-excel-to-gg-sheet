@@ -262,6 +262,23 @@ def quytrinh():
 def chamcong():
     return render_template('chamcong/chamcong.html')
 
+@app.route('/khachhang')
+def chamcong():
+    return render_template('khachhang/khachhang.html')
+
+@app.route('/tonkhobanhang')
+def chamcong():
+    return render_template('banhang/tonkhobanhang.html')
+
+@app.route('/tonkhosx')
+def chamcong():
+    return render_template('sanxuat/tonkhosx.html')
+
+@app.route('/congno')
+def chamcong():
+    return render_template('sanxuat/tonkhosx.html')
+
+
 if __name__ == "__main__":
     
     app.run(debug=True, host="0.0.0.0", port=5001)
