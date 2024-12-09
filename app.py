@@ -274,10 +274,6 @@ def chamcong():
 def chamcong():
     return render_template('sanxuat/tonkhosx.html')
 
-@app.route('/congno')
-def chamcong():
-    return render_template('sanxuat/tonkhosx.html')
-
 
 if __name__ == "__main__":
     
