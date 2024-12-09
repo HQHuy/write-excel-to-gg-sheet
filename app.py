@@ -258,6 +258,10 @@ def parttime():
 def quytrinh():
     return render_template('sanxuat/quytrinh.html')
 
+@app.route('/chamcong')
+def chamcong():
+    return render_template('chamcong/chamcong.html')
+
 if __name__ == "__main__":
     
     app.run(debug=True, host="0.0.0.0", port=5001)
