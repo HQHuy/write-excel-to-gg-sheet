@@ -131,8 +131,7 @@ def home():
                     shop_list_dict = {shop: None for shop in shop_list}
 
                 for shop in shop_list:
-                    print(f"Shop name: {shop}, Type: {
-                          type(shop)}, Repr: {repr(shop)}")
+                    print(f"Shop name: {shop}, Type: {type(shop)}, Repr: {repr(shop)}")
                     print("Kiểm tra non_vat_data:")
                     print(non_vat_data)
                     print("Kiểm tra vat_data:")
