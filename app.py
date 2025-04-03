@@ -14,7 +14,6 @@ app = Flask(__name__)
 app.secret_key = "sdc"  # Để sử dụng flash messages
 
 '''Kết Nối GG Sheets và GG Drive'''
-# SERVICE_ACCOUNT_FILE = os.path.join("config", "SDC2711 Accountant.json")
 SERVICE_ACCOUNT_FILE = json.loads(os.environ['GOOGLE_SHEET_CREDENTIALS'])
 # Các quyền (scopes) cần thiết cho Google Sheets và Google Drive
 SCOPES = [
